@@ -4,13 +4,20 @@ public class Stack {
     static int stackArray[] = {};
 
     public static void main(String[] args) {
-
+        System.out.println("--------------------------------");
         Stack stack = new Stack();
         stack.push(7);
 
         System.out.println(stack.empty());
+        System.out.println("--------------------------------");
         stack.print();
+        System.out.println("--------------------------------");
         stack.pop();
+        stack.print();
+        System.out.println("--------------------------------");
+        stack.push(1);
+        stack.push(7);
+        stack.print();
         stack.clear();
         stack.print();
         System.out.println(stack.empty());
@@ -58,8 +65,8 @@ public class Stack {
     }
 
     public void clear() {
-
-
+        int emptyArray[] = {};
+        stackArray = emptyArray;
     }
 
     public void print() {
