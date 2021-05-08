@@ -8,6 +8,8 @@ public class Stack {
         Stack stack = new Stack();
         stack.push(7);
         stack.pop();
+
+        stack.print();
     }
 
 
@@ -22,7 +24,7 @@ public class Stack {
                 stackArrayPushed[i] = num;
             }
         }
-        System.out.println(Arrays.toString(stackArrayPushed));
+        //System.out.println(Arrays.toString(stackArrayPushed));
         stackArray = stackArrayPushed;
     }
 
@@ -51,6 +53,7 @@ public class Stack {
     }
 
     public void print() {
+        System.out.println(Arrays.toString(stackArray));
 
     }
 
