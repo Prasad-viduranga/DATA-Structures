@@ -30,6 +30,8 @@ public class Stack {
         System.out.println(stack.contains(4));
         System.out.println(stack.contains(7));
 
+        System.out.println("--------------------------------");
+        System.out.println(stack.peek());
     }
 
 
@@ -62,6 +64,13 @@ public class Stack {
         } else {
             return true;
         }
+    }
+
+    public int peek() {
+
+        return stackArray[stackArray.length - 1];
+
+
     }
 
     public void clear() {
