@@ -67,10 +67,7 @@ public class Stack {
     }
 
     public int peek() {
-
         return stackArray[stackArray.length - 1];
-
-
     }
 
     public void clear() {
@@ -79,7 +76,11 @@ public class Stack {
     }
 
     public void print() {
-        System.out.println(Arrays.toString(stackArray));
+        int getArray[]=new int[stackArray.length];
+        for (int i=0;i<stackArray.length;i++){
+            getArray[i]=stackArray[stackArray.length-i-1];
+        }
+        System.out.println(Arrays.toString(getArray));
 
     }
 
