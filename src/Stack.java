@@ -12,8 +12,10 @@ public class Stack {
 
     public void push(int num) {
         int stackArrayPushed[] = new int[stackArray.length+1];
-        for (int i = 0; i < stackArrayPushed.length-1; i++) {
-            if (i < stackArrayPushed.length) {
+
+        for (int i = 0; i < stackArrayPushed.length; i++) {
+            System.out.println(i);
+            if (i < stackArray.length) {
                 stackArrayPushed[i] = stackArray[i];
             } else {
                 stackArrayPushed[i] = num;
