@@ -14,6 +14,15 @@ public class Stack {
         stack.clear();
         stack.print();
         System.out.println(stack.empty());
+        stack.push(3);
+        stack.push(1);
+        stack.push(7);
+        stack.push(9);
+        stack.print();
+        System.out.println("--------------------------------");
+        System.out.println(stack.contains(4));
+        System.out.println(stack.contains(7));
+
     }
 
 
@@ -58,8 +67,22 @@ public class Stack {
 
     }
 
-    public boolean constains(int num) {
-        return true;
+    public boolean contains(int num) {
+        Boolean b = false;
+        ;
+        for (int i = 0; i < stackArray.length; i++) {
+
+            if (num == (int) stackArray[i]) {
+                b = true;
+                break;
+
+            } else {
+
+                b = false;
+            }
+
+        }
+        return b;
     }
 
 
