@@ -2,8 +2,18 @@ package ds;
 
 public class Queue {
 
-    public void enqueue() {
+    int arr[] = {};
 
+    public void enqueue(int num) {
+        int memArr[] = {};
+        for (int i = 0; i < arr.length + 1; i++) {
+            if(i<arr.length-1){
+                memArr[i]=arr[i];
+            }else{
+                memArr[i]=num;
+            }
+
+        }
 
     }
 
@@ -24,12 +34,12 @@ public class Queue {
 
     public int size() {
 
-
+return 0;
     }
 
     public int peek() {
 
-
+return 0;
     }
 
     public boolean contains() {
