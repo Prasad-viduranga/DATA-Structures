@@ -26,6 +26,10 @@ public class QueueTest {
         System.out.println("Last in : " + queue.peek());
         System.out.println("Size : " + queue.size());
         System.out.println("Contains of : "+13+" is " + queue.contains(13));
+        System.out.println("The Queue is empty, that is :" + queue.empty());
+        queue.clear();
+        System.out.println("The Queue is empty, that is :" + queue.empty());
+
 
     }
 }

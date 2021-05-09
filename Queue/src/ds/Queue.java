@@ -56,15 +56,17 @@ public class Queue {
         for (int i = 0; i < queueArr.length; i++) {
             if (num == queueArr[i]) {
                 b = true;
-
             }
         }
         return b;
     }
 
     public boolean empty() {
-
-        return true;
+        if (queueArr.length > 0) {
+            return false;
+        } else {
+            return true;
+        }
     }
 
 
