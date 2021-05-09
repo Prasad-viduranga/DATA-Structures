@@ -4,50 +4,51 @@ import java.util.Arrays;
 
 public class Queue {
 
-    int arr[] = {};
+    int queueArr[] = {};
 
     public void enqueue(int num) {
-        int memArr[] = new int[arr.length + 1];
-        for (int i = 0; i < arr.length + 1; i++) {
-            if (i < arr.length ) {
-                memArr[i] = arr[i];
+        int memArr[] = new int[queueArr.length + 1];
+        for (int i = 0; i < queueArr.length + 1; i++) {
+            if (i < queueArr.length) {
+                memArr[i] = queueArr[i];
             } else {
                 memArr[i] = num;
             }
-
         }
-        arr = memArr;
+        queueArr = memArr;
     }
 
     public void dequeue() {
-        int memArr[] = new int[arr.length - 1];
-        for (int i = 0; i < arr.length - 1; i++) {
+        int memArr[] = new int[queueArr.length - 1];
+        for (int i = 0; i < queueArr.length - 1; i++) {
 
-                memArr[i] = arr[i+1];
-
+            memArr[i] = queueArr[i + 1];
         }
-        arr = memArr;
-
+        queueArr = memArr;
     }
 
     public void print() {
-        System.out.println(Arrays.toString(arr));
+        System.out.println(Arrays.toString(queueArr));
 
     }
 
     public void clear() {
-
+        int memArr[] = {};
+        queueArr = memArr;
 
     }
 
     public int size() {
 
-        return 0;
+        return queueArr.length;
     }
 
     public int peek() {
-
-        return 0;
+        int lastIn = 0;
+        if (queueArr.length > 0) {
+            lastIn = queueArr[queueArr.length - 1];
+        }
+        return lastIn;
     }
 
     public boolean contains() {

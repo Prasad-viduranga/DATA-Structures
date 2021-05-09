@@ -2,7 +2,7 @@ import ds.Queue;
 
 public class QueueTest {
     public static void main(String[] args) {
-        Queue queue=new Queue();
+        Queue queue = new Queue();
         queue.enqueue(1);
         queue.enqueue(2);
         queue.enqueue(3);
@@ -16,5 +16,14 @@ public class QueueTest {
         queue.print();
         queue.dequeue();
         queue.print();
+        queue.clear();
+        queue.print();
+        System.out.println("Size : " + queue.size());
+        System.out.println("Last in : " + queue.peek());
+        queue.enqueue(12);
+        queue.enqueue(13);
+        queue.enqueue(14);
+        System.out.println("Last in : " + queue.peek());
+        System.out.println("Size : " + queue.size());
     }
 }
