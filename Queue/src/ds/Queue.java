@@ -20,7 +20,13 @@ public class Queue {
     }
 
     public void dequeue() {
+        int memArr[] = new int[arr.length - 1];
+        for (int i = 0; i < arr.length - 1; i++) {
 
+                memArr[i] = arr[i+1];
+
+        }
+        arr = memArr;
 
     }
 
