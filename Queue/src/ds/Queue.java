@@ -51,9 +51,15 @@ public class Queue {
         return lastIn;
     }
 
-    public boolean contains() {
+    public boolean contains(int num) {
+        Boolean b = false;
+        for (int i = 0; i < queueArr.length; i++) {
+            if (num == queueArr[i]) {
+                b = true;
 
-        return false;
+            }
+        }
+        return b;
     }
 
     public boolean empty() {

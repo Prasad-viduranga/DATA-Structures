@@ -25,5 +25,7 @@ public class QueueTest {
         queue.enqueue(14);
         System.out.println("Last in : " + queue.peek());
         System.out.println("Size : " + queue.size());
+        System.out.println("Contains of : "+13+" is " + queue.contains(13));
+
     }
 }
